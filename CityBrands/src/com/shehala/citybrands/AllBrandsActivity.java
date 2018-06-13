@@ -54,8 +54,12 @@ import com.shehala.citybrands.util.PrintLog;
 import com.shehala.citybrands.util.SharePreferenceUtil;
 import com.shehala.citybrands.util.ToastShow;
 
+
+
+
 public class AllBrandsActivity extends MapActivity implements OnClickListener {
 
+	private boolean checkOrNot = false;
 	private GestureDetector mGestureDetector;
 	private Handler mHandler = new Handler();
 	private static int duration = 1;
