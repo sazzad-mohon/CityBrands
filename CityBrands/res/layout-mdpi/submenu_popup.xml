@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fade_screen"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="48dip"
+            android:layout_height="26dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile_photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/new_user_input_box" >
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="@string/user_experience_dialog"
+            android:textColor="#ffffff"
+            android:textSize="8sp" />
+
+        <ImageButton
+            android:id="@+id/new_user_info_img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dip"
+            android:background="@drawable/input_text_clear" />
+    </RelativeLayout>
+
+</LinearLayout>

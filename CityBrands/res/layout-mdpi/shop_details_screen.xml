@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar" >
+
+        <ImageButton
+            android:id="@+id/shop_details_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/back_hover" />
+
+        <ImageButton
+            android:id="@+id/shop_details_brand_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/brand_hover" />
+
+        <ImageButton
+            android:id="@+id/shop_details_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/shop_details_facebook"
+            android:background="@drawable/twitter_hover_m" />
+
+        <ImageButton
+            android:id="@+id/shop_details_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/facebook_hover_m" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:background="#00000000" >
+
+        <ImageView
+            android:id="@+id/shop_details_profile_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shop_profile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000" >
+
+        <ImageButton
+            android:id="@+id/row_all_shop_push_hover_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/list_indicator" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/row_all_shop_push_hover_image"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shop_details_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="Shop name"
+                android:textColor="#14282d"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_details_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afstand 2 km."
+                android:textColor="#62c9d2"
+                android:textSize="8sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/shop_details_show_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/show_way_hover_m" />
+
+        <ImageButton
+            android:id="@+id/shop_details_show_way_favorite_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/shop_details_show_way"
+            android:background="@drawable/list_favorite_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000" >
+
+        <ImageButton
+            android:id="@+id/image_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/list_indicator"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_hide"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shop_details_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           
+                android:text="Address"
+                android:textColor="#c7c6c4"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_details_zip_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="Zip code"
+                android:textColor="#b0b2b4"
+                android:textSize="8sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/shop_details_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="Phone"
+                android:textColor="#b0b2b4"
+                android:textSize="8sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/opening_hours"
+                android:textColor="#c7c6c4"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_details_opening_hour_fri_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dip"
+                android:text="Mon-Fri: 10:00-17:30"
+                android:textColor="#b0b2b4"
+                android:textSize="8sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/shop_details_opening_hour_sat_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dip"
+                android:text="Saturday: 10:00-15:00"
+                android:textColor="#b0b2b4"
+                android:textSize="8sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip" >
+
+        <ImageButton
+            android:id="@+id/shop_details_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dip"
+            android:background="@drawable/android_button_web" />
+
+        <ImageButton
+            android:id="@+id/shop_details_phone_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/shop_details_web"
+            android:background="@drawable/android_button_phone" />
+
+        <ImageButton
+            android:id="@+id/shop_details_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@+id/shop_details_facebook_btn"
+            android:background="@drawable/android_button_message" />
+
+        <ImageButton
+            android:id="@+id/shop_details_facebook_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/android_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/shop_details_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/spinner_input"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="@string/see_allbrand" />
+
+        <ImageButton
+            android:id="@+id/shop_details_spinner_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dip"
+            android:background="@drawable/spinner_input_down_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

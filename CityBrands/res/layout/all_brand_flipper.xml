@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flpallbrand"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/fliper_login"
+        layout="@layout/login" />
+
+    <include
+        android:id="@+id/fliper_new_password"
+        layout="@layout/new_password" />
+
+    <include
+        android:id="@+id/fliper_new_user"
+        layout="@layout/new_user" />
+
+    <include
+        android:id="@+id/fliper_search_screen"
+        layout="@layout/search_screen" />
+
+    <include
+        android:id="@+id/fliper_all_shop_screen"
+        layout="@layout/all_shop_screen" />
+
+    <include
+        android:id="@+id/fliper_most_popular_screen"
+        layout="@layout/most_popular_screen" />
+
+    <include
+        android:id="@+id/fliper_favorite_screen"
+        layout="@layout/favorite_screen" />
+
+    <include
+        android:id="@+id/fliper_shop_details"
+        layout="@layout/shop_details_screen" />
+
+    <include
+        android:id="@+id/fliper_city_brands"
+        layout="@layout/city_brands_screen" />
+
+    <include
+        android:id="@+id/fliper_all_brands"
+        layout="@layout/allbrands" />
+
+    <include
+        android:id="@+id/fliper_setting_screen"
+        layout="@layout/setting_screen" />
+
+    <include
+        android:id="@+id/fliper_congratulation_screen"
+        layout="@layout/congratulation_screen" />
+
+    <include
+        android:id="@+id/fliper_map_view_screen"
+        layout="@layout/map_view_screen" />
+
+    <include
+        android:id="@+id/fliper_city_brand_second_screen"
+        layout="@layout/city_brands_screen_second" />
+
+    <include
+        android:id="@+id/fliper_news_list_screen"
+        layout="@layout/news_list_screen" />
+
+    <include
+        android:id="@+id/fliper_news_details_screen"
+        layout="@layout/news_details_screen" />
+
+    <include
+        android:id="@+id/allbrands_sec"
+        layout="@layout/allbrands_second" />
+
+    <include
+        android:id="@+id/mm"
+        layout="@layout/allbrands_second" />
+
+</ViewFlipper>

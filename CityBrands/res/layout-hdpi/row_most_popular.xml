@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000" >
+
+        <TextView
+            android:id="@+id/row_most_popular_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:gravity="left"
+            android:text="11"
+            android:textColor="#62c9d2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@+id/row_most_popular_number"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/row_most_popular_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Shop name"
+                android:textColor="#14282d"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/row_most_popular_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afstand 2 km."
+                android:textColor="#62c9d2"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:src="@drawable/list_view_devider" /> -->
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/row_most_popular_arrow_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dip"
+            android:background="@drawable/list_arrow_button" />
+
+        <ImageButton
+            android:id="@+id/row_most_popular_favorite_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/row_most_popular_arrow_icon"
+            android:background="@drawable/list_favorite_normal" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/list_view_devider" /> -->
+    <!-- </RelativeLayout> -->
+
+</LinearLayout>

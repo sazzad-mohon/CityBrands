@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/map_image"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/first_rel_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar" >
+
+        <ImageButton
+            android:id="@+id/all_shop_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/back_hover" />
+
+        <ImageButton
+            android:id="@+id/all_shop_brand_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/brand_hover" />
+
+        <ImageButton
+            android:id="@+id/all_shop_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/all_shop_facebook"
+            android:background="@drawable/twitter_hover_m" />
+
+        <ImageButton
+            android:id="@+id/all_shop_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/facebook_hover_m" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_rel_layout"
+        android:layout_marginTop="32dip" >
+
+        <ListView
+            android:id="@+id/all_shop_listview"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:cacheColorHint="#00000000"
+            android:paddingBottom="50dip"
+            android:paddingRight="10dip"
+             >
+        </ListView>
+
+        <com.shehala.citybrands.verticalseekbar.VerticalSeekBar
+            android:id="@+id/all_shop_seekbar"
+            android:layout_width="52dip"
+            android:layout_height="325dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dip"
+            android:indeterminate="false"
+            android:maxHeight="30dip"
+            android:maxWidth="320dip"
+            android:minHeight="30dip"
+            android:minWidth="320dip"
+            android:paddingLeft="7dip"
+            android:paddingRight="7dip"
+            android:progressDrawable="@drawable/all_shop_style_progress"
+            android:thumb="@drawable/vertical_scroll_indicator" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/vertical_distance_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/age_counter"
+                android:gravity="center_horizontal"
+                android:paddingTop="4dip"
+                android:text="31-40"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/map_curl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/curl_bg" >
+
+            <Button
+                android:id="@+id/btnShowMap"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:layout_gravity="bottom"
+                android:background="#00000000"
+                android:onClick="showMap" />
+        </TableRow>
+    </RelativeLayout>
+
+</RelativeLayout>

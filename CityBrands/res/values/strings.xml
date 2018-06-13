@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CityBrands</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="remember_me">Husk mig</string>
+    <string name="forget_password">Jeg har glemt min kode</string>
+    <string name="new_user">Ny bruger</string>
+    <string name="email_address">E-mail adresse</string>
+    <string name="password">Kode</string>
+    <string name="repeat_password">Gentag kode</string>
+    <string name="receive_password">Du vil nu modtage et nyt kodeord via e-mail.</string>
+    <string name="send_submit">Opret</string>
+    <string name="post_code">Postnummer</string>
+    <string name="receive_newsletter">Jeg ønsker at modtage nyhedsbrev</string>
+    <string name="required_field">Alle felter skal udfyldes</string>
+    <string name="year">år</string>
+    <string name="logout">Log ud</string>
+    <string name="findwhats">Find det du søger</string>
+    <string name="opening_hours">Åbningstider</string>
+    <string name="mon_fri">Man-Fre:</string>
+    <string name="sat">Lørdag:</string>
+    <string name="see_allbrand">Se alle brands i shoppen</string>
+    <string name="delete_profile">Slet profil</string>
+    <string name="save">Gem</string>
+  
+    <string-array name="m_dis">
+       
+        <item>100 m.</item>
+        <item>200 m.</item>
+        <item>300 m.</item>
+        <item>400 m.</item>
+        <item>500 m.</item>
+        <item>600 m.</item>
+        <item>700 m.</item>
+        <item>800 m.</item>
+        <item>900 m.</item>
+        <item>1 km.</item>
+        <item>1.5 km.</item>
+        <item>2 km.</item>
+        <item>3 km.</item>
+        <item>5 km.</item>
+        <item>6 km.</item>
+        <item>7 km.</item>
+        <item>8 km.</item>
+        <item>9 km.</item>
+        <item>10 km.</item>
+        <item>20 km.</item>
+        <item>30 km.</item>
+        <item>40 km.</item>
+        <item>50 km.</item>
+        <item>60 km.</item>
+        <item>70 km.</item>
+        <item>80 km.</item>
+        <item>90 >km.</item>
+    </string-array>
+
+    <string name="user_experience_dialog">CityBrands vil udelukkende benytte oplysningerne\nmed henblik på at forbedre brugeroplevelsen.</string>
+    
+    
+    <string name="thanks">TAK</string>
+    <string name="registration_success">Dit login er oprettet og sendt til din e-mail</string>
+    <string name="setting_delete_profile">Ja, jeg ønsker at slettet min profil.</string>
+    <string name="delete_profile_implemented">Gennemført</string>
+    <string name="delete_profile_implemented_msg">Din bruger er nu slettet, og en bekræftigelse\nvil blive sendt til din mail</string>
+    <string name="edit_info">Dine nye oplysninger er nu gemt</string>
+    <string name="distance_calculation">Afstand</string>
+    <string name="next_news">Naeste</string>
+  
+    <string name="dialog_txt">Ønsker du at ringe til butikken?</string>
+    
+    <string name="home_tab">Forside</string>
+    <string name="allbrands_tab">Alle brands</string>
+    <string name="most_popular_tab">Mest søgte</string>
+    <string name="favorite_tab">Favoritter</string>
+    <string name="news_tab">Nyheder</string>
+     
+    
+     <string name="city_brand">Ansvarsfraskrivelse\n\nCityBrands er en samling af informationer der er tilgængelige for offentligheden online. CityBrands fralægger sig derfor alt ansvar ift. eventuelle fejl og mangler i de pågældende oplysninger, og CityBrands kan således ikke gøres erstatningsansvarlig for de information som findes på siden – uanset om disseinformationer mod forventning skulle være ukorrekte.
+Ethvert link til tredjemands-server er uden ansvar for os, ligeldes er indholdet eller pålideligheden af siderne, der linkes til. CityBrands har så vidt det er muligt vurderet og evalueret alle links og informationer.
+ 
+\nOphavsret\n\nGengivelse er tilladt med kildeangivelse, hvis ikke andet er anført. Hvor forudgående tilladelse kræves til gengivelse eller brug af tekst- og multimedie-sekvenser (lyd, billeder, programmel osv.), erstatter denne tilladelse ovenstående generelle tilladelse og skal klart anføre eventuelle begrænsninger i brugen.\nBilleder og tekst oplagt af trediepart (butikkerne), tilhører dem og brugen af disse er fuldt ud på den enkelte butiks ansvar. CityBrands kan derfor ikke stilles til ansvar for brud på ophavsretten, ved sådanne elementer.</string>
+   
+  <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+</resources>

@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_no_shadow" >
+
+        <ImageButton
+            android:id="@+id/allbrands_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/back_hover" />
+
+        <ImageButton
+            android:id="@+id/allbrands_brand_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/brand_hover" />
+
+        <ImageButton
+            android:id="@+id/allbrands_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/allbrands_facebook"
+            android:background="@drawable/twitter_hover_m" />
+
+        <ImageButton
+            android:id="@+id/allbrands_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/facebook_hover_m" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_bar_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/allbrands_edt_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/searchbar"
+            android:hint="Search"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingLeft="35dip"
+            android:textColor="#aeb9b1"
+            android:textColorHint="#aeb9b1"
+            android:textSize="12sp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/allbrands_btn_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/searchbar_zoom" >
+        </ImageView>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="5dip" -->
+        <!-- android:layout_marginTop="15dip" -->
+        <!-- android:layout_toRightOf="@+id/allbrands_btn_search_icon" -->
+        <!-- android:text="Search" -->
+        <!-- android:textColor="#d6d6d6" -->
+        <!-- android:textSize="12sp" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- <ListView -->
+        <!-- android:id="@+id/allbrands_listview" -->
+        <!-- android:layout_width="0dip" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" > -->
+        <!-- </ListView> -->
+
+
+        <!-- <com.technobd.citybrands.sectionindexlistview.IndexableListView -->
+        <!-- android:id="@+id/allbrands_listview" -->
+        <!-- android:layout_width="0dip" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:cacheColorHint="#00000000" -->
+        <!-- android:clickable="true" /> -->
+
+        <ListView
+            android:id="@+id/allbrands_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/sideIndex"
+            android:background="#00000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sideIndex"
+            android:layout_width="20dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/sideIndex" -->
+        <!-- android:layout_width="40dip" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:background="#00000000" -->
+        <!-- android:gravity="center_horizontal" -->
+        <!-- android:orientation="vertical" > -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <com.technobd.citybrands.FastSearchListView -->
+        <!-- android:id="@+id/allbrands_listview" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@+id/search_bar_bg" -->
+        <!-- android:layout_centerInParent="true" /> -->
+
+    </RelativeLayout>
+
+</LinearLayout>

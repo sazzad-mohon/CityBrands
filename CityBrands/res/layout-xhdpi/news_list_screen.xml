@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar" >
+
+        <ImageButton
+            android:id="@+id/news_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/back_hover" />
+
+        <ImageButton
+            android:id="@+id/news_list_brand_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/brand_hover" />
+
+        <ImageButton
+            android:id="@+id/news_list_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/news_list_facebook"
+            android:background="@drawable/twitter_hover_m" />
+
+        <ImageButton
+            android:id="@+id/news_list_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/facebook_hover_m" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+         >
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="0dip" -->
+        <!-- android:layout_weight=".05" -->
+        <!-- android:orientation="horizontal" > -->
+        <!-- </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:orientation="horizontal"
+            android:scrollbars="none" 
+            >
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1" >
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="190dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:scrollbars="none"
+                 >
+
+                <ImageView
+                    android:id="@+id/news_list_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="145dip"
+                    android:layout_marginTop="18dip"
+                    android:background="@drawable/video_img"
+                    android:padding="8dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/news_list_image"
+                    android:visibility="invisible" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="23dip"
+                    android:background="@drawable/video_img"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="5dip"
+                    android:scrollbars="none" 
+                    >
+
+                    <WebView
+                        android:id="@+id/news_vedio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:visibility="visible"
+                        android:scrollbars="none"
+                        />
+
+                    <!-- <com.google.android.youtube.player.YouTubePlayerView -->
+                    <!-- android:id="@+id/youtube_view" -->
+                    <!-- android:layout_width="295dip" -->
+                    <!-- android:layout_height="115dip" /> -->
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/video_pause"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/video_img_pause"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1" >
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1" >
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ListView
+                    android:id="@+id/news_list_listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/news_list_bg"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/news_list_divider"
+                    android:paddingBottom="10dip" >
+                </ListView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1" >
+            </TableRow>
+        </LinearLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="0dip" -->
+        <!-- android:layout_weight=".1" -->
+        <!-- android:gravity="right|bottom" -->
+        <!-- android:orientation="vertical" > -->
+        <!-- </LinearLayout> -->
+    </LinearLayout>
+
+</LinearLayout>
